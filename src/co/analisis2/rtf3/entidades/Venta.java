@@ -1,4 +1,4 @@
-package co.analisis2.rtf3.dominio;
+package co.analisis2.rtf3.entidades;
 
 import java.time.LocalDate;
 import java.util.List;

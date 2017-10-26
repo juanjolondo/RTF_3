@@ -1,14 +1,14 @@
-package co.analisis2.rtf3.dominio;
+package co.analisis2.rtf3.entidades;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public class PedidoCliente extends Venta {
+public class PedidoSuministros extends Venta {
 	
-	public PedidoCliente(){
+	public PedidoSuministros(){
 		
 	}
-	public PedidoCliente(String idCliente, String descripcion, String medioPago, double precioTotal, boolean pagado,
+	public PedidoSuministros(String idCliente, String descripcion, String medioPago, double precioTotal, boolean pagado,
 			String consecutivo, List<Integer> cantidad, char estado, LocalDate fecha, List<String> listaProductos) {
 		this.idCliente = idCliente;
 		this.descripcion = descripcion;
