@@ -40,9 +40,9 @@ public class ArchivoUsuarios {
 		}
 	}
 	
-	public boolean guardar(Usuario usuario, int tipo){
+	public boolean guardar(Usuario usuario){
 		
-		String registro = parseString(usuario,tipo);
+		String registro = parseString(usuario);
 		
 		byte data[] = registro.getBytes();
 		ByteBuffer out = ByteBuffer.wrap(data);	
@@ -119,9 +119,9 @@ public class ArchivoUsuarios {
 		
 	}
 
-	private String parseString(Usuario usuario, int tipo) {
+	private String parseString(Usuario usuario) {
 		StringBuilder registro = new StringBuilder(LONGITUD_REGISTRO);
-		registro.append(tipo);
+		registro.append(usuario.getTipo());
 		registro.append(completarCampoConEspacios(usuario.getUsuario(), USUARIO_LONGITUD));
 		registro.append(completarCampoConEspacios(usuario.getClave(), CLAVE_LONGITUD));
 		registro.append(completarCampoConEspacios(usuario.getIdUsuario(), IDENTIFICACION_LONGITUD));

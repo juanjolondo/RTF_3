@@ -20,7 +20,7 @@
       		</div>
     	</div><br /><br />
     	
-    	<form name="frmRegistroPedidos" action="ConfirmarPedido.jsp" method="POST" >
+    	<form name="frmRegistroPedidos" action="http://localhost:8080/RTF_3/RegistroPedidos" method="post" >
     	<%
          Date dNow = new Date();
          SimpleDateFormat ft = new SimpleDateFormat ("MM/dd/yyyy");

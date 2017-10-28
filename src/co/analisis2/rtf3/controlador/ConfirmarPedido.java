@@ -1,4 +1,4 @@
-package controlador;
+package co.analisis2.rtf3.controlador;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -6,6 +6,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import co.analisis2.rtf3.dominio.PedidoClienteNegocio;
+import co.analisis2.rtf3.entidades.Factura;
+import co.analisis2.rtf3.entidades.PedidoCliente;
 
 /**
  * Servlet implementation class ConfirmarPedido
@@ -36,8 +40,8 @@ public class ConfirmarPedido extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-		PedidoCliente pc = request.getAttribute("pedido");
-		Factura fac = request.getAttribute("factura");
+		PedidoCliente pc = (PedidoCliente) request.getAttribute("pedido");
+		Factura fac = (Factura) request.getAttribute("factura");
 		
 		if(pcn.guardarPedidoCliente(pc) || pcn.guardarFactura(fac)){
 			response.getWriter().append("El pedido ha sido registrado exitosamente.");		

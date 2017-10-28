@@ -14,7 +14,7 @@
         <p><a href="IniciarSesion.jsp">INICIAR SESION</a></p>
         
         <p style="color: #ff0000">${sessionScope['error']}</p>
-        <form action="IniciarSesion.jsp" method="post">
+        <form action="http://localhost:8080/RTF_3/RegistrarUsuario" method="post">
             <p>Nombre <input type="text" name="txtNombre"></p>
             <p>Apellido <input type="text" name="txtApellido"></p>
             <p>Usuario <input type="text" name="txtUsuario"></p>
@@ -36,7 +36,7 @@
             <p>Confirme Email: <input type="text" name="txtEmail2"></p>
             <p>Contraseña: <input type="password" name="txtClave"></p>
             <p>Confirma contraseña: <input type="password" name="txtClave2"></p>
-            <p><input type="submit" value="Confirmar registro" ></p>
+            <p><button type="submit">Confirmar registro</button></p>
         </form>
     </body>
 </html>
