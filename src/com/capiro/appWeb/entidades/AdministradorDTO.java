@@ -1,6 +1,6 @@
 package com.capiro.appWeb.entidades;
 
-public class AdministradorDTO extends FacadePersona {
+public class AdministradorDTO extends FacadePersonaDTO {
 	
 	public AdministradorDTO() { 
 	}

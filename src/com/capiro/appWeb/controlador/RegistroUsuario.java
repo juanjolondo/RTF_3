@@ -18,16 +18,16 @@ import com.capiro.appWeb.entidades.UsuarioDTO;
 @WebServlet("/RegistroUsuario")
 public class RegistroUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private UsuarioService usuario;
-	private ClienteService cliente;
+	private UsuarioService us;
+	private ClienteService cs;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
     public RegistroUsuario() {
         super();
-        usuario = new UsuarioService();
-        cliente = new ClienteService();
+        us = new UsuarioService();
+        cs = new ClienteService();
     }
 
 	/**
@@ -61,10 +61,10 @@ public class RegistroUsuario extends HttpServlet {
 		
 		if(validarCampos(cliente,usu, response)){
 			
-			if(usuario.existe(usuario) && cliente.existe(idUsuario)){
+			if(us.existe(usuario) && cs.existe(idUsuario)){
 				response.getWriter().append("El cliente o el usuario ya se encuentra registrados.");
 			}
-			else if(usuario.guardar(usu) && cliente.guardar(cliente)){
+			else if(us.guardar(usu) && cs.guardar(cliente)){
 				response.getWriter().append("El usuario ha sido registrado.");
 				getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
 			}

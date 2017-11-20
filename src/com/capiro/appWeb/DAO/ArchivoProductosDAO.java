@@ -72,7 +72,7 @@ public class ArchivoProductosDAO {
 		return this.cacheNombre.containsKey(nombre);
 	}
 	
-	public Producto buscarPorId(String id){
+	public ProductoDTO buscarPorId(String id){
 		
 		llenarCache();		
 		ProductoDTO cliente = cacheId.get(id);		
