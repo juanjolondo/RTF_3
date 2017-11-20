@@ -16,7 +16,7 @@
 </tr>
   <table>
    <tr>
-    <form action="RegistrarCliente.jsp" align="center"><td> <button type="submit"><b>Registrar un cliente</b></button> </td></form>
+    <form action="RegistroCliente.jsp" align="center"><td> <button type="submit"><b>Registrar un cliente</b></button> </td></form>
     <form action="Inventario.jsp" align="center"><td> <button type="submit"><b>Inventario</b></button> </td></form>    
    </tr>
   </table>
