@@ -15,8 +15,8 @@
   
   <table>
    <tr>
-    <form action="vistas/IniciarSesion.jsp"><td> <button type="submit"><b>INICIAR SESIÓN</b></button> </td></form>
-    <form action="vistas/RegistrarUsuario.jsp"><td> <button type="submit"><b>REGISTRARSE</b></button> </td></form>
+    <form action="vistas/InicioSesion.jsp"><td> <button type="submit"><b>INICIAR SESIÓN</b></button> </td></form>
+    <form action="vistas/RegistroUsuario.jsp"><td> <button type="submit"><b>REGISTRARSE</b></button> </td></form>
     <td> <button type="submit">Nuestras flores</button> </td>
     <td> <button type="submit">Compañia</button> </td>
     <td> <button type="submit">Temporada flores</button> </td>
