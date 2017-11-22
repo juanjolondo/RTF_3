@@ -3,22 +3,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-<style type="text/css" media="screen">
-</style>
-<head>
-        
-    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Login2</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
     <body>
-        <h1><b>INICIAR SESIÓN</b></h1>
-        <p><a href="RegistroUsuario.jsp">REGISTRARSE</a></p>
-        Por favor ingresa correctamente sus datos, en caso de dificultad "aldoR7@gmail.com"
-        <p style="color: #ff0000">${sessionScope['error']}</p>
+    <center><h1>Iniciar sesión</h1></center>
         <form action="HomeLogin.jsp" method="post">
-            <p> Identificación del usuario: <input type="text" name="txtIdUsuario" required></p>
-            <p> Contraseña: <input type="password" name="txtPassword" required></p>
-            <p><input type="submit" value="Entrar"></p>
-        </form>
+         <table align="center">
+          <tr>
+           <th align="right">Id usuario:</th>
+            <td><input type="text" name="txtIdUsuario" required></td>
+          </tr>
+          <tr>
+           <th align="right">Contraseña:</th>
+            <td><input type="password" name="txtPassword" required></td>
+          </tr>
+          <tr>
+          <tr></tr>
+           <td colspan="1" align="right"><input style="color: #FAFAFA; background-color: #2E2E2E; border: #000 1px solid" type="submit" value="Iniciar sesión" class=""></td>
+           <form action="RegistroUsuario.jsp">
+            <td colspan="2" align="right"><input style="background-color: #FAFAFA; color: #2E2E2E ;border: #2E2E2E 2px solid" type="submit" value="Registrarse" class=""></td>            
+           </form>
+          </tr>
+          <tr>
+           
+          </tr>
+         
+         </table>
+        </form>        
     </body>
 </html>
